@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Steve - Portfolio</title>
+  <title>Home - Rowe's Portfolio</title>
   <link rel="stylesheet" href="./styles/main.css">
   <style>
-    /* Homepage specific styles (pure HTML/CSS) */
+
     .hero {
       height: 100vh;
       display: flex;
@@ -109,10 +109,11 @@
   </style>
 </head>
 <body>
+
   <!-- Header and Navigation -->
   <header>
     <div class="container nav-container">
-      <a href="index.html" class="logo">STEVE<span>.</span></a>
+      <a href="index.html" class="logo"><span>WELCOME</span></a>
       <nav>
         <ul class="nav-menu">
           <li><a href="index.html" class="active">Home</a></li>
@@ -135,20 +136,15 @@
     <section class="hero">
       <div class="container hero-content">
         <div class="hero-text">
-          <h1>Hi, I'm <span>STEVE</span></h1>
+          <h1>Hi, I'm <span>Rowe</span></h1>
           <p>A student in Brown University's class of 2027 pursuing a dual concentration in Business Economics and Computer Science. I am driven by cars, technology, and the outdoors.</p>
           <div class="hero-buttons">
             <a href="work.html" class="btn">View My Work</a>
             <a href="contact.html" class="btn btn-outline">Get In Touch</a>
           </div>
-          <div class="social-links">
-            <a href="#" aria-label="LinkedIn">in</a>
-            <a href="#" aria-label="GitHub">gh</a>
-            <a href="#" aria-label="Instagram">ig</a>
-          </div>
         </div>
         <div class="hero-image">
-          <img src="./assets/headshot.jpg" alt="Steve's portrait" onerror="this.src='https://placehold.co/400x400/1A4D2E/FFFFFF/?text=STEVE'">
+          <img src="assets/headshot.jpg" alt="Rowe's portrait">
         </div>
       </div>
     </section>
@@ -157,30 +153,12 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2023 Steve. All Rights Reserved.</p>
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="work.html">Work</a>
-        <a href="resume.html">Resume</a>
-        <a href="contact.html">Contact</a>
-      </div>
+      <p>&copy; 2023 Rowe Stodolnic. All Rights Reserved.</p>
     </div>
   </footer>
 
-  <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <!-- Scripts -->
   <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-  <script>
-    // Pure JavaScript for mobile menu toggle
-    document.addEventListener('DOMContentLoaded', () => {
-      const hamburger = document.querySelector('.hamburger');
-      const navMenu = document.querySelector('.nav-menu');
-      
-      hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
-      });
-    });
-  </script>
+
 </body>
 </html>

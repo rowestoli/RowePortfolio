@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Steve's Portfolio</title>
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/resume.css">
+</head>
+<body>
+  <!-- Header and Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">STEVE<span>.</span></a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="resume.html" class="active">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="section resume-section">
+      <div class="container">
+        <h2 class="section-title">Resume</h2>
+        <div class="resume-actions">
+          <a href="./assets/resume.pdf" download class="btn">Download PDF</a>
+        </div>
+        
+        <div class="resume-viewer">
+          <iframe id="resume-frame" src="./assets/resume.pdf" onerror="this.src='https://placehold.co/800x1100/1A4D2E/FFFFFF/?text=Resume+PDF+Placeholder'"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Steve. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>

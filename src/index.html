@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steve - Portfolio</title>
+  <link rel="stylesheet" href="./styles/main.css">
+  <style>
+    /* Homepage specific styles (pure HTML/CSS) */
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 0;
+      background-color: #FBFBFB;
+    }
+
+    .hero-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3rem;
+    }
+
+    .hero-text {
+      flex: 1;
+    }
+
+    .hero-image {
+      flex: 1;
+      text-align: right;
+    }
+
+    .hero-image img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 50%;
+      border: 8px solid #1A4D2E;
+      box-shadow: 15px 15px 0px rgba(255, 159, 41, 0.5);
+      transition: all 0.5s ease;
+    }
+
+    .hero-image img:hover {
+      transform: scale(1.03);
+      box-shadow: 20px 20px 0px rgba(255, 159, 41, 0.7);
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      color: #1A4D2E;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    .hero h1 span {
+      color: #FF9F29;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #333;
+      margin-bottom: 2rem;
+      max-width: 600px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .social-links {
+      display: flex;
+      margin-top: 2rem;
+      gap: 1.5rem;
+    }
+
+    .social-links a {
+      display: inline-block;
+      color: #1A4D2E;
+      font-size: 1.5rem;
+      transition: all 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #FF9F29;
+      transform: translateY(-5px);
+    }
+
+    @media screen and (max-width: 992px) {
+      .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+
+      .hero-image {
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+
+      .hero-buttons {
+        justify-content: center;
+      }
+
+      .social-links {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header and Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">STEVE<span>.</span></a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1>Hi, I'm <span>STEVE</span></h1>
+          <p>A student in Brown University's class of 2027 pursuing a dual concentration in Business Economics and Computer Science. I am driven by cars, technology, and the outdoors.</p>
+          <div class="hero-buttons">
+            <a href="work.html" class="btn">View My Work</a>
+            <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+          </div>
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="GitHub">gh</a>
+            <a href="#" aria-label="Instagram">ig</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="./assets/headshot.jpg" alt="Steve's portrait" onerror="this.src='https://placehold.co/400x400/1A4D2E/FFFFFF/?text=STEVE'">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Steve. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  <script>
+    // Pure JavaScript for mobile menu toggle
+    document.addEventListener('DOMContentLoaded', () => {
+      const hamburger = document.querySelector('.hamburger');
+      const navMenu = document.querySelector('.nav-menu');
+      
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>

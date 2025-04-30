@@ -1,0 +1,148 @@
+
+.contact-intro {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  max-width: 800px;
+}
+
+.contact-container {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: var(--light-gray);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-icon {
+  font-size: 1.8rem;
+  margin-right: 1.5rem;
+  color: var(--dark-green);
+}
+
+.contact-details h3 {
+  font-size: 1.2rem;
+  color: var(--dark-green);
+  margin-bottom: 0.5rem;
+}
+
+.contact-details p {
+  color: var(--dark-gray);
+}
+
+.social-connect {
+  flex: 1;
+}
+
+.social-connect h3 {
+  font-size: 1.5rem;
+  color: var(--dark-green);
+  margin-bottom: 1.5rem;
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--dark-gray);
+  background-color: var(--light-gray);
+  transition: all 0.3s ease;
+}
+
+.social-item:hover {
+  background-color: var(--orange);
+  color: var(--white);
+  transform: translateY(-5px);
+}
+
+.social-icon {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+.contact-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-form-container h3 {
+  font-size: 1.5rem;
+  color: var(--dark-green);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.contact-form {
+  background-color: var(--light-gray);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--dark-green);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid var(--medium-gray);
+  border-radius: 4px;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--orange);
+}
+
+.contact-form .btn {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .social-grid {
+    grid-template-columns: 1fr;
+  }
+}
